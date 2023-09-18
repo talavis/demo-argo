@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: menu-aggregator
+  labels:
+    name: menu-aggregator
+spec:
+  rules:
+  - host: menu.localdev.me
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: menu-frontend
+            port:
+              number: 8080
+      - pathType: Prefix
+        path: "/api"
+        backend:
+          service:
+            name: menu-backend
+            port:
+              number: 8000

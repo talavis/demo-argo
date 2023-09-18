@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: menu-frontend
+  name: menu-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: menu-frontend
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: menu-frontend
+    spec:
+      containers:
+      - image: ghcr.io/talavis/menu-frontend:demo
+        name: menu-frontend
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}
