@@ -19,6 +19,7 @@ spec:
     spec:
       containers:
       - image: ghcr.io/talavis/menu-backend:demo
+        imagePullPolicy: Always
         name: menu-frontend
         ports:
         - containerPort: 8000
