@@ -4,7 +4,7 @@ Quick Argocd demo on Rancher Desktop
 
 ## Setup
 
-1. Fork https://github.com/talavis/demo-argo and https://github.com/talavis/lunch-demo
+1. Fork https://github.com/talavis/demo-argo and https://github.com/talavis/lunch-menu
 2. Check out the forks locally
 3. Select the `demo` branch in `lunch-menu`: `git switch demo`
 4. Create a branch based on the demo branch: `git checkout -b demo-local`
