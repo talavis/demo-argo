@@ -5,12 +5,14 @@ Quick Argocd demo on Rancher Desktop
 ## Setup
 
 1. Fork https://github.com/talavis/demo-argo and https://github.com/talavis/lunch-menu
-2. Check out the forks locally
+2. Check out the forks locally (e.g. `git@github.com:talavis/lunch-menu.git`)
 3. Select the `demo` branch in `lunch-menu`: `git switch demo`
 4. Create a branch based on the demo branch: `git checkout -b demo-local`
-5. Make a change in the file `lunch-menu/backend/build_trigger.txt` and push it to Github to trigger a build of container images that will be published on your account.
-6. Create a `demo` branch in the `demo-argo` repo: `git checkout -b demo`
-7. Update the image in the `demo-app/deployment/deploy_*` files to use your images instead.
+5. Make a change in the file `lunch-menu/backend/build_trigger.txt`.
+6. Push the change to Github to trigger a build of container images that will be published on your account (`git push --set-upstream origin demo`)
+7. Create a `demo` branch in the `demo-argo` repo: `git checkout -b demo`
+8. Update the image in the `demo-app/deployment/deploy_*` files to use your images instead. Commit.
+9. Push the updated branch to github (`git push --set-upstream origin demo`)
 
 ## Prepare Argo
 
