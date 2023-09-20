@@ -18,7 +18,7 @@ spec:
         app: menu-frontend
     spec:
       containers:
-      - image: ghcr.io/talavis/menu-frontend:demo-local
+      - image: ghcr.io/talavis/demo-argo-frontend:demo-local
         imagePullPolicy: Always
         name: menu-frontend
         ports:
